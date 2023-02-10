@@ -20,4 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/' , include('authentication.api.urls')),
     path('orders/' , include('orders.api.urls')),
+    # path('^auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.jwt')),
 ]
