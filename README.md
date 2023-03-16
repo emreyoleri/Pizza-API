@@ -1,7 +1,4 @@
 ## PIZZA DELIVERY API
-
-
-
 ## ROUTES TO IMPLEMENT
 | METHOD | ROUTE | FUNCTIONALITY |ACCESS|
 | ------- | ----- | ------------- | ------------- |
