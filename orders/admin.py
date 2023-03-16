@@ -1,10 +1,9 @@
 from django.contrib import admin
 from .models import Order
 
+
+@admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
-    list_display=['id','size','order_status','size']
-    list_filter=['placed_at','updated_at','order_status']
-
-
-admin.site.register(Order,OrderAdmin)
+    list_display = ['size', 'order_status', 'quantity', 'created_at',]
+    list_filter = ['created_at', 'updated_at', 'size',]
 
